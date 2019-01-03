@@ -20,16 +20,17 @@ sbatch run.sh
 ```
 # Introduction of models
 ## ResNet
-[fig](https://github.com/ArtechStark/Cifar10-classification-WideResNet-and-cutout/blob/master/images/ResNet.png)
+![fig](https://github.com/ArtechStark/Cifar10-classification-WideResNet-and-cutout/blob/master/images/ResNet.png)
 ## WideResNet
-[title](https://github.com/ArtechStark/Cifar10-classification-WideResNet-and-cutout/blob/master/images/WideResNet.png)
+![title](https://github.com/ArtechStark/Cifar10-classification-WideResNet-and-cutout/blob/master/images/WideResNet.png)
 # Data augmentation
-[title](https://github.com/ArtechStark/Cifar10-classification-WideResNet-and-cutout/blob/master/images/DataAugmentation.png)
+![title](https://github.com/ArtechStark/Cifar10-classification-WideResNet-and-cutout/blob/master/images/DataAugmentation.png)
 # cutout
-Cutout is a kind of regularition methods
-[title](https://github.com/ArtechStark/Cifar10-classification-WideResNet-and-cutout/blob/master/images/cutout_on_cifar10.jpg)
+Cutout is a kind of regularization methods
+
+![title](https://github.com/ArtechStark/Cifar10-classification-WideResNet-and-cutout/blob/master/images/cutout_on_cifar10.jpg)
 
 #Training
 ## Comparison
-[title](https://github.com/ArtechStark/Cifar10-classification-WideResNet-and-cutout/blob/master/images/comparison.png)
-[title](https://github.com/ArtechStark/Cifar10-classification-WideResNet-and-cutout/blob/master/images/comparison2.png)
+![title](https://github.com/ArtechStark/Cifar10-classification-WideResNet-and-cutout/blob/master/images/comparison.png)
+![title](https://github.com/ArtechStark/Cifar10-classification-WideResNet-and-cutout/blob/master/images/comparison2.png)
