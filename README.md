@@ -1,4 +1,3 @@
-# Cifar10-classification-WideResNet-and-cutout
 # How to run the code in high-performance computing platform of SJTU Innovation Center
 ## Modify run.sh
 - The second line is the name the job.
@@ -10,7 +9,7 @@
   - python train.py --dataset cifar10 --model wideresnet --data_augmentation --cutout --length 16
   - python train.py --dataset cifar10 --model resnet18 --data_augmentation --cutout --length 16
 ## Attention please
-If the run.sh code is dos format, please use the command below to change it to unix format
+If the run.sh file is dos format, please use the command below to change it to unix format
 ```
 dos2unix run.sh
 ```
