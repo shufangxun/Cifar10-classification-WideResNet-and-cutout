@@ -17,6 +17,15 @@ dos2unix run.sh
 ```
 sbatch run.sh
 ```
+And you will see your jobid
+## View the job
+```
+sq
+```
+## Cancel the job
+```
+scancel jobid
+```
 # Introduction of models
 ## ResNet
 ![fig](https://github.com/ArtechStark/Cifar10-classification-WideResNet-and-cutout/blob/master/images/ResNet.png)
