@@ -11,7 +11,7 @@ import torch
 import torch.nn as nn
 from torch.autograd import Variable
 import torch.backends.cudnn as cudnn
-from torch.optim.lr_scheduler import MultiStepLR
+from torch.optim.lr_scheduler import MultiStepLR 
 
 from torchvision.utils import make_grid
 from torchvision import datasets, transforms
@@ -61,7 +61,7 @@ test_id = args.dataset + '_' + args.model
 
 print(args)
 
-# Image Preprocessing
+# Data Preprocessing
 if args.dataset == 'svhn':
     normalize = transforms.Normalize(mean=[x / 255.0 for x in[109.9, 109.7, 113.8]],
                                      std=[x / 255.0 for x in [50.1, 50.6, 50.8]])
@@ -159,7 +159,7 @@ cnn_optimizer = torch.optim.SGD(cnn.parameters(), lr=args.learning_rate,
 if args.dataset == 'svhn':
     scheduler = MultiStepLR(cnn_optimizer, milestones=[80, 120], gamma=0.1)
 else:
-    scheduler = MultiStepLR(cnn_optimizer, milestones=[60, 120, 160], gamma=0.2)
+    scheduler = MultiStepLR(cnn_optimizer, milestones=[60, 120, 160], gamma=0.2)    ## 学习率变化 当epoch=60,120,160时：
 
 filename = 'logs/' + test_id + '.csv'
 csv_logger = CSVLogger(args=args, fieldnames=['epoch', 'train_acc', 'test_acc'], filename=filename)
