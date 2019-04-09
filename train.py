@@ -19,10 +19,11 @@ from torchvision import datasets, transforms
 from util.misc import CSVLogger
 from util.cutout import Cutout
 
-from model.resnet import ResNet18
+from model.resnet import ResNet18,ResNet34
+from model.vggnet import Vgg16,Vgg19
 from model.wide_resnet import WideResNet
 
-model_options = ['resnet18', 'wideresnet']
+model_options = ['vgg16', 'vgg19', resnet18', 'resnet34', 'wideresnet']
 dataset_options = ['cifar10', 'cifar100', 'svhn']
 
 parser = argparse.ArgumentParser(description='CNN')
@@ -143,6 +144,8 @@ test_loader = torch.utils.data.DataLoader(dataset=test_dataset,
 
 if args.model == 'resnet18':
     cnn = ResNet18(num_classes=num_classes)
+if args.model == 'resnet34':
+    cnn = ResNet34(num_classes=num_classes)
 elif args.model == 'wideresnet':
     if args.dataset == 'svhn':
         cnn = WideResNet(depth=16, num_classes=num_classes, widen_factor=8,
